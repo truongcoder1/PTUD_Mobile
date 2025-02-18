@@ -37,6 +37,7 @@ public class GUI_QLSV extends JFrame {
         btnOK.setBounds(220, 20, 60, 30);
         btnOK.setBackground(Color.CYAN);
         btnOK.addActionListener(new ActionListener() {
+            //khi click vao button OK thi se lay danh sach sinh vien theo lop
             @Override
             public void actionPerformed(ActionEvent e) {
                 XLSV xl = new XLSV();

@@ -2,6 +2,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+// tạo class XLSV kết nối csdl và lấy dữ liệu
 public class XLSV {
     private Connection connection;
 
@@ -25,6 +26,7 @@ public class XLSV {
             Statement statement = connection.createStatement();
             String sql = "SELECT * FROM tbsv WHERE Class LIKE '"+sv.getClas()+"'";
             ResultSet rs = statement.executeQuery(sql);
+            //duyet ket qua va them vao list
             while(rs.next()){
                 Sinhvien sv1 = new Sinhvien();
                 sv1.setFirstName(rs.getString(1));

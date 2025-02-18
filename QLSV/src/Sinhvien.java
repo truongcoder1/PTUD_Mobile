@@ -1,5 +1,6 @@
 import java.util.Date;
 
+//tạo class Sinhvien
 public class Sinhvien {
     private String FirstName;
     private String LastName;
