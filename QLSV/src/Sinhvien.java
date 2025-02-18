@@ -95,4 +95,12 @@ public class Sinhvien {
     public float avg(){
         return (OOP+PM+ML+DB+Mobile)/5;
     }
+    public char avgChar(){
+        float avg = avg();
+        if (avg >= 8.5) return 'A';
+        else if (avg >= 7.0) return 'B';
+        else if (avg >= 5.5) return 'C';
+        else if (avg >= 4.0) return 'D';
+        else return 'F';
+    }
 }

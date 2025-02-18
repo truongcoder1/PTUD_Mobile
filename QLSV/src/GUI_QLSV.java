@@ -76,7 +76,7 @@ public class GUI_QLSV extends JFrame {
                 List<Sinhvien> listSV = xl.getSVbyClass(sv);
                 dtm.setRowCount(0);
                 for (Sinhvien sv1 : listSV) {
-                    dtm.addRow(new Object[]{sv1.getFirstName(), sv1.getLastName(), sv1.getBirthDay(), sv1.getAddress(), sv1.getClas(), sv1.getOOP(), sv1.getPM(), sv1.getML(), sv1.getDB(), sv1.getMobile(),sv1.avg()});
+                    dtm.addRow(new Object[]{sv1.getFirstName(), sv1.getLastName(), sv1.getBirthDay(), sv1.getAddress(), sv1.getClas(), sv1.getOOP(), sv1.getPM(), sv1.getML(), sv1.getDB(), sv1.getMobile(),sv1.avgChar()});
                 }
                 for(Sinhvien sv2: listSV){
                     float avg = sv2.avg();
