@@ -7,9 +7,9 @@ public class XLSV {
     private Connection connection;
 
     // thay doi url, user, password cho phu hop voi csdl cua ban
-    private String url = "jdbc:mysql://localhost:3306/QLSV";
-    private String user = "root";
-    private String password = "khaingo718";
+    private String url = "jdbc:sqlserver://localhost:1433; databaseName = QLSV;encrypt = false";
+    private String user = "sa";
+    private String password = "123";
 
     public void getCon() {
         try {
