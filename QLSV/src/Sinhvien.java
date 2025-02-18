@@ -7,49 +7,49 @@ public class Sinhvien {
     private Date BirthDay;
     private String Address;
     private String Clas;
-    private char OOP;
-    private char PM;
-    private char ML;
-    private char DB;
-    private char Mobile;
+    private float OOP;
+    private float PM;
+    private float ML;
+    private float DB;
+    private float Mobile;
 
-    public char getMobile() {
+    public float getMobile() {
         return Mobile;
     }
 
-    public void setMobile(char mobile) {
+    public void setMobile(float mobile) {
         Mobile = mobile;
     }
 
-    public char getDB() {
+    public float getDB() {
         return DB;
     }
 
-    public void setDB(char DB) {
+    public void setDB(float DB) {
         this.DB = DB;
     }
 
-    public char getML() {
+    public float getML() {
         return ML;
     }
 
-    public void setML(char ML) {
+    public void setML(float ML) {
         this.ML = ML;
     }
 
-    public char getPM() {
+    public float getPM() {
         return PM;
     }
 
-    public void setPM(char PM) {
+    public void setPM(float PM) {
         this.PM = PM;
     }
 
-    public char getOOP() {
+    public float getOOP() {
         return OOP;
     }
 
-    public void setOOP(char OOP) {
+    public void setOOP(float OOP) {
         this.OOP = OOP;
     }
 

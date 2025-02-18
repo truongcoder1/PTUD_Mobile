@@ -34,11 +34,11 @@ public class XLSV {
                 sv1.setBirthDay(rs.getDate(3));
                 sv1.setAddress(rs.getString(4));
                 sv1.setClass(rs.getString(5));
-                sv1.setOOP(rs.getString(6).charAt(0));
-                sv1.setPM(rs.getString(7).charAt(0));
-                sv1.setML(rs.getString(8).charAt(0));
-                sv1.setDB(rs.getString(9).charAt(0));
-                sv1.setMobile(rs.getString(10).charAt(0));
+                sv1.setOOP((char) rs.getFloat(6));
+                sv1.setPM(rs.getFloat(7));
+                sv1.setML(rs.getFloat(8));
+                sv1.setDB(rs.getFloat(9));
+                sv1.setMobile(rs.getFloat(10));
                 listSV.add(sv1);
             }
         } catch (SQLException e) {
