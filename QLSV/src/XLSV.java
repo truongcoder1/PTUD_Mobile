@@ -8,26 +8,28 @@ public class XLSV {
 
     // thay doi url, user, password cho phu hop voi csdl cua ban
     private String url = "jdbc:mysql://localhost:3306/QLSV";
-    private String user ="root";
+    private String user = "root";
     private String password = "khaingo718";
-    public void getCon(){
+
+    public void getCon() {
         try {
-            connection = DriverManager.getConnection(url,user,password);
+            connection = DriverManager.getConnection(url, user, password);
             System.out.println("Ket noi thanh cong");
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
     }
+
     // lay danh sach sinh vien theo lop
-    public List<Sinhvien> getSVbyClass(Sinhvien sv){
+    public List<Sinhvien> getSVbyClass(Sinhvien sv) {
         List<Sinhvien> listSV = new ArrayList<>();
         try {
             getCon();
             Statement statement = connection.createStatement();
-            String sql = "SELECT * FROM tbsv WHERE Class LIKE '"+sv.getClas()+"'";
+            String sql = "SELECT * FROM tbsv WHERE Class LIKE '" + sv.getClas() + "'";
             ResultSet rs = statement.executeQuery(sql);
             //duyet ket qua va them vao list
-            while(rs.next()){
+            while (rs.next()) {
                 Sinhvien sv1 = new Sinhvien();
                 sv1.setFirstName(rs.getString(1));
                 sv1.setLastName(rs.getString(2));

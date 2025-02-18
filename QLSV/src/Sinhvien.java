@@ -92,4 +92,7 @@ public class Sinhvien {
     public void setFirstName(String firstName) {
         FirstName = firstName;
     }
+    public float avg(){
+        return (OOP+PM+ML+DB+Mobile)/5;
+    }
 }
